@@ -1,0 +1,51 @@
+{
+  "name": "news-intelligence",
+  "version": "0.8.0",
+  "description": "A sample Node.js web application that highlights the use of Alchemy APIs and Tone Analyzer",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/watson-developer-cloud/news-intelligence.git"
+  },
+  "engines": {
+    "node": ">=4.0"
+  },
+  "author": "IBM Corp.",
+  "contributors": [{
+    "name": "Samantha Chan",
+    "email": "chanskw@ca.ibm.com"
+  }, {
+    "name": "Kalvin Misquith",
+    "email": "misquith@ca.ibm.com"
+  }],
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/watson-developer-cloud/news-intelligence/issues"
+  },
+  "scripts": {
+    "start": "node server.js",
+    "test": "istanbul cover ./node_modules/mocha/bin/_mocha",
+    "lint": "eslint .",
+    "autofix": "eslint --fix .",
+    "codecov": "npm run test && (codecov || true)"
+  },
+  "dependencies": {
+    "body-parser": "^1.13.2",
+    "cf-deployment-tracker-client": "0.1.1",
+    "dotenv": "^2.0.0",
+    "ejs": "^2.3.4",
+    "express": "^4.12.2",
+    "express-rate-limit": "^2.1.0",
+    "express-secure-only": "^0.2.1",
+    "helmet": "^2.0.0",
+    "compression": "^1.6.1",
+    "q": "^1.4.1",
+    "watson-developer-cloud": "^1.9.0"
+  },
+  "devDependencies": {
+    "codecov": "^1.0.1",
+    "eslint": "^2.8.0",
+    "istanbul": "^0.4.2",
+    "mocha": "^2.4.5",
+    "supertest": "^1.2.0"
+  }
+}
